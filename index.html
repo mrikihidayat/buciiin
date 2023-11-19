@@ -9,9 +9,15 @@
     <title>Flowers</title>
 </head>
 <body>
-    <audio controls autoplay>
+     <audio id="myAudio" controls>
         <source src="jaz1.mp3" type="audio/mp3">
     </audio>
+    <script>
+        // Ambil elemen audio
+        var audio = document.getElementById("myAudio");
+        // Otomatis putar audio saat halaman dimuat
+        audio.autoplay = true;
+    </script>
     <div class="greetings">
     <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
         <span>L</span>
